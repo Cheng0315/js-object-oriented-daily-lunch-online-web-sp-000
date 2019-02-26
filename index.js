@@ -3,6 +3,7 @@ let store = { neighborhoods: [], meals: [], customers: [], deliveries: [] };
 let neiId = 0;
 let customerId = 0;
 let mealId = 0;
+let delId = 0;
 
 class Neighborhood {
   constructor(name) {
@@ -31,7 +32,10 @@ class Meal {
 }
 
 class Delivery {
-  constructor(name) {
-    this.name = name;
+  constructor(mealId, customerId, neighborhoodId) {
+    this.id = delId;
+    this.mealId = mealId;
+    this.customerId = customerId;
+    this.neighborhoodId = neighborhoodId;
   }
 }
