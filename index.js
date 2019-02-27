@@ -73,7 +73,7 @@ class Delivery {
   }
 
   neighborhood() {
-    return store.neighborhood.find(
+    return store.neighborhoods.find(
       function(c) {
         return c.id === this.neighborhoodId;
       }.bind(this)
