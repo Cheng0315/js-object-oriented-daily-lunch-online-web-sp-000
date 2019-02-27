@@ -59,7 +59,7 @@ class Delivery {
   meal() {
     return store.meals.find(
       function(m) {
-        return m.id == this.mealId;
+        return m.id === this.mealId;
       }.bind(this)
     )
   }
@@ -67,7 +67,7 @@ class Delivery {
   customer() {
     return store.customers.find(
       function(c) {
-        return c.id == this.customerId;
+        return c.id === this.customerId;
       }.bind(this)
     )
   }
