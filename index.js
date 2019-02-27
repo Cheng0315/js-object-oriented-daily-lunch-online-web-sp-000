@@ -63,4 +63,12 @@ class Delivery {
       }.bind(this)
     )
   }
+
+  customer() {
+    return store.customers.find(
+      function(c) {
+        return c.id == this.customerId;
+      }.bind(this)
+    )
+  }
 }
